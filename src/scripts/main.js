@@ -7,7 +7,7 @@
  *  !IMPORTANT!
  *  gulp-purgecss will remove css for classes that are 
  *  added with JS. You can whitelist these classes 
- *  by adding them in gulpfile.js [line 171]
+ *  by adding them in gulpfile.js [line 232]
  * -------------------------------------------------- */
 
 (function($) {
