@@ -1,0 +1,36 @@
+{
+  "name": "gulp-sass-nunjucks-boilerplate",
+  "description": "Gulp setup for static websites using Nunjucks as templating engine",
+  "main": "index.js",
+  "authors": [
+    "Ziggy Verstrepen"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize-css": "^8.0.0",
+    "font-awesome": "^5.0.13"
+  },
+  "overrides": {
+      "font-awesome": {
+        "main": [
+          "web-fonts-with-css/scss/fontawesome.scss",
+          "web-fonts-with-css/scss/fa-solid.scss",
+          "web-fonts-with-css/webfonts/*"
+        ]
+      },
+      "normalize-css": {
+          "main": [
+            "normalize.css"
+          ]
+      }
+  }
+}

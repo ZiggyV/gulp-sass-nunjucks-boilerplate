@@ -1,0 +1,36 @@
+/* _GRID.SCSS
+ * --------------------------------------------------
+ *  Grid styles should be declared here
+ * -------------------------------------------------- */
+
+// 3 column grid
+.grid {
+    .grid__row {
+        &:first-of-type {
+            margin-bottom: 16px;
+            
+            @include bp-medium {
+                margin-bottom: 24px;
+            }
+        }
+
+        .grid__item {
+            margin-bottom: 16px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            @include bp-medium {
+                float: left;
+                width: 32%;
+                margin-right: 2%;
+                margin-bottom: 0;
+
+                &:nth-child(3n+3) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

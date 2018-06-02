@@ -1,0 +1,12 @@
+<nav>
+    <div class="wrapper">
+        <ul class="cf">
+            {# loop through navItems in data.json and apply active link #}
+            {% for item in navItems %}
+                <li>
+                    <a class="{% if item.item == title|lower or (item.item == 'index' and not title) %}active{% endif %}" href="{{ item.item }}.html">{{ item.item_pretty }}</a>
+                </li> 
+            {% endfor %}
+        </ul>
+    </div>
+</nav>

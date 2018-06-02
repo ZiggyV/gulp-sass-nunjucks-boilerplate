@@ -1,0 +1,19 @@
+{% macro gridItem(title, img, alt, excerpt) %}
+    <div class="card__item cf">
+        <div class="card__image">
+            <a href="#">
+                <div class="image">
+                    <img src="images/{{ img }}.jpg" alt="{{ alt }}">
+                </div>
+            </a>
+        </div>
+        <div class="card__content">
+            <a href="#">
+                <h3 class="m--bottom-sm">{{ title }}</h3>
+            </a>
+            <div class="card__excerpt">
+                <p>{{ excerpt }}</p>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

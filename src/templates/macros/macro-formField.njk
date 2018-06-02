@@ -1,0 +1,20 @@
+{% macro input(name, placeholder, type='text') %}
+    <div class="form__row">
+        <label for="{{ name }}"></label>
+        <input id="{{ name }}" name="{{ name }}" placeholder="{{ placeholder }}" type="{{ type }}" autocomplete="off">
+    </div>
+{% endmacro %}
+
+{% macro textarea(name, placeholder='Additional information') %}
+    <div class="form__row">
+        <label for="{{ name }}"></label>
+        <textarea id="{{ name }}" name="{{ name }}" placeholder="{{ placeholder }}"></textarea>
+    </div>
+    
+{% endmacro %}
+
+{% macro submit(value='Send', type='submit') %}
+    <div class="submit__row">
+        <input value="{{ value }}" type="{{ type }}">
+    </div>
+{% endmacro %}

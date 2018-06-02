@@ -1,0 +1,207 @@
+{
+    "meta": {
+        "domain": "Gulp boilerplate",
+        "domain_lower": "gulpboilerplate",
+        "description" : "A front-end boilerplate using Gulp as build tool and Nunjucks as templating engine.",
+        "image": "img-1.jpg",
+        "url": "https://github.com/ZiggyV/gulp-sass-nunjucks-boilerplate"
+    },
+    "navItems": [
+        {
+            "item" : "index",
+            "item_pretty": "home"
+        },
+        {
+            "item": "styleguide",
+            "item_pretty": "style guidelines"
+        },
+        {
+            "item": "test",
+            "item_pretty": "test page"
+        }
+    ],
+    "colors": [
+        {
+            "name": "main",
+            "hex": "#e74c3c"
+        },
+        {
+            "name": "secondary",
+            "hex": "#f9bf3b"
+        },
+        {
+            "name": "tertiary",
+            "hex": "#ff7f50"
+        },
+        {
+            "name": "success",
+            "hex": "#29b572"
+        },
+        {
+            "name": "error",
+            "hex": "#e74c3c"
+        },
+        {
+            "name": "text",
+            "hex": "#181818"
+        },
+        {
+            "name": "paragraph",
+            "hex": "#999999"
+        },
+        {
+            "name": "shadow",
+            "hex": "#cccccc"
+        },
+        {
+            "name": "border",
+            "hex": "#eeeeee"
+        },
+        {
+            "name": "background",
+            "hex": "#fafafa"
+        }
+    ], 
+    "imageGrid": [
+        {
+            "name": "img-1",
+            "alt": "Image 1"
+        },
+        {
+            "name": "img-2",
+            "alt": "Image 2"
+        },
+        {
+            "name": "img-3",
+            "alt": "Image 3"
+        },
+        {
+            "name": "img-4",
+            "alt": "Image 4"
+        },
+        {
+            "name": "img-5",
+            "alt": "Image 5"
+        },
+        {
+            "name": "img-6",
+            "alt": "Image 6"
+        }
+    ],
+    "text": {
+        "fox": "The quick brow fox jumps over the lazy dog",
+        "lorem": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo nobis quasi omnis voluptas sapiente assumenda cumque at aspernatur cupiditate eaque fugit architecto explicabo exercitationem, labore provident est, accusamus perspiciatis iusto voluptate. Eligendi quo totam consectetur, nam adipisci amet aliquam neque maxime non modi repellat nostrum, magnam fuga! Repudiandae aliquid, rerum!"
+    },
+    "typography": [
+        {
+            "name": "Big heading",
+            "font": "Overpass Light",
+            "pt": "64pt",
+            "html": "h1",
+            "class": "big__heading",
+            "text": "fox"
+        },
+        {
+            "name": "Heading 1",
+            "font": "Overpass Regular",
+            "pt": "48pt",
+            "html": "h1",
+            "class": "",
+            "text": "fox"
+        },
+        {
+            "name": "Heading 2",
+            "font": "Overpass Light",
+            "pt": "32pt",
+            "html": "h2",
+            "class": "",
+            "text": "fox"
+        },
+        {
+            "name": "Heading 3",
+            "font": "Overpass Regular",
+            "pt": "24pt",
+            "html": "h3",
+            "class": "",
+            "text": "fox"
+        },
+        {
+            "name": "Heading 4",
+            "font": "Overpass Bold",
+            "pt": "21pt",
+            "html": "h4",
+            "class": "",
+            "text": "fox"
+        },
+        {
+            "name": "Paragraph",
+            "font": "Overpass Light",
+            "pt": "18pt",
+            "html": "p",
+            "class": "",
+            "text": "lorem"
+        },
+        {
+            "name": "Bold",
+            "font": "Overpass Bold",
+            "pt": "18pt",
+            "html": "p",
+            "class": "bold",
+            "text": "lorem"
+        },
+        {
+            "name": "Thin",
+            "font": "Overpass Thin",
+            "pt": "18pt",
+            "html": "p",
+            "class": "thin",
+            "text": "lorem"
+        },
+        {
+            "name": "Small",
+            "font": "Overpass Regular",
+            "pt": "14pt",
+            "html": "p",
+            "class": "small",
+            "text": "lorem"
+        }
+    ],
+    "cards": [
+        {
+            "title": "Card item 1",
+            "image": "img-7",
+            "alt": "Image 7",
+            "excerpt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis non, obcaecati nisi numquam, iusto neque quia, laboriosam ea itaque aperiam ducimus vitae sequi labore voluptas odio repudiandae. Doloremque mollitia illum, pariatur itaque voluptatibus soluta ad quaerat atque vero officia autem!"
+        },
+        {
+            "title": "Card item 2",
+            "image": "img-8",
+            "alt": "Image 8",
+            "excerpt": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet aut veniam nobis voluptatibus magnam ratione, libero quia natus velit facere tempora blanditiis dignissimos perferendis! Earum, quas nisi. Eius impedit hic qui doloribus est nihil neque?"
+        },
+        {
+            "title": "Card item 3",
+            "image": "img-9",
+            "alt": "Image 9",
+            "excerpt": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis pariatur libero illum sed sequi deleniti error labore doloremque dolorum, neque veritatis consequuntur tenetur exercitationem aliquam voluptate tempora fugiat cupiditate temporibus obcaecati in totam reprehenderit? Similique dignissimos perspiciatis recusandae."
+        },
+        {
+            "title": "Card item 4",
+            "image": "img-10",
+            "alt": "Image 10",
+            "excerpt": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis pariatur libero illum sed sequi deleniti error labore doloremque dolorum, neque veritatis consequuntur tenetur exercitationem aliquam voluptate tempora fugiat cupiditate temporibus obcaecati in totam reprehenderit? Similique dignissimos perspiciatis recusandae."
+        },
+        {
+            "title": "Card item 5",
+            "image": "img-11",
+            "alt": "Image 11",
+            "excerpt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis non, obcaecati nisi numquam, iusto neque quia, laboriosam ea itaque aperiam ducimus vitae sequi labore voluptas odio repudiandae. Doloremque mollitia illum, pariatur itaque voluptatibus soluta ad quaerat atque vero officia autem!"
+        },
+        {
+            "title": "Card item 6",
+            "image": "img-12",
+            "alt": "Image 12",
+            "excerpt": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet aut veniam nobis voluptatibus magnam ratione, libero quia natus velit facere tempora blanditiis dignissimos perferendis! Earum, quas nisi. Eius impedit hic qui doloribus est nihil neque?"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+/* _VARIABLES.SCSS
+ * --------------------------------------------------
+ *  SASS variables
+ * 
+ *  Colors, fonts, breakpoints, transitions and 
+ *  other variables should be declared here
+ * -------------------------------------------------- */
+
+// change default fa-font-path to work with this project 
+// info on Font Awesome 5: (https://goo.gl/d5Ua5B)
+$fa-font-path: '../fonts' !default;
+
+// colors
+$white: #ffffff;
+$black: #000000;
+
+$main-color: #e74c3c;
+$secondary-color: #F9BF3B;
+$tertiary-color: #ff7f50;
+
+$text-color: #181818;
+$paragraph-color: #999999;
+$shadow-color: #cccccc;
+$border-color: #eeeeee;
+$background-color: #fafafa;
+
+$success-color: #29b572;
+$error-color: #e74c3c;
+
+// fonts
+$ovp-regular: 'Overpass-Regular', sans-serif;
+$ovp-bold: 'Overpass-Bold', sans-serif;
+$ovp-light: 'Overpass-Light', sans-serif;
+$ovp-thin: 'Overpass-Thin', sans-serif;
+
+// breakpoints
+$bp-small: 480px;
+$bp-medium: 768px;
+$bp-normal: 960px;
+$bp-large: 1200px;
+$bp-xlarge: 1500px;
+
+// transitions
+$cubic: cubic-bezier(.64,.09,.08,1);

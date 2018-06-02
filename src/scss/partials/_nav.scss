@@ -1,0 +1,31 @@
+/* _NAV.SCSS
+ * --------------------------------------------------
+ *  Nav styles should be declared here
+ * -------------------------------------------------- */
+
+nav {
+    position: absolute;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+
+    ul {
+        display: inline-block;
+        
+        li {
+            float: left;
+            margin-left: 12px;
+            margin-right: 12px;
+
+            a {
+                @extend %link;
+                text-decoration: none;
+
+                &.active,
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

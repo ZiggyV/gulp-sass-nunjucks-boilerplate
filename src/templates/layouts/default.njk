@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="{{ meta.description }}">
+
+    {# social meta block #}
+    {% block meta %}
+        {% include "partials/meta.njk" %}
+    {% endblock %} 
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#FF6347">
+    <title>{{ (title + " - " + meta.domain) if title else meta.domain }}</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- External CSS file(s) - automatically injected -->
+    <!-- build:css css/main.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css" />
+    <!-- endbower -->
+    
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+</head>
+<body>  
+    {# import macros #}
+    {% import "macros/macro-section.njk" as s %}
+
+    {# nav block #}
+    {% block nav %}
+        {% include "partials/nav.njk" %}
+    {% endblock %} 
+
+    {# header block #}
+    {% block header %}
+        {{ s.section(class="vh--center-sm", "Default content", "Can be replaced by using template inheritance", meta.url, "View on GitHub") }}
+    {% endblock %} 
+
+    {# main content block #}    
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>    
+
+    {# footer block #}
+    {% block footer %}
+        {{ s.section(section="footer", class="vh--center-sm", "Gulp boilerplate", "Front-end boilerplate for a better and faster workflow", meta.url, "View on github") }}
+    {% endblock %} 
+    
+    <!-- External JS file(s) - automatically injected -->
+    <!-- build:js js/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Main JS file -->
+    <!-- build:js js/main.js -->
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

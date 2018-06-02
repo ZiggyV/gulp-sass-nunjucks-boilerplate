@@ -1,0 +1,22 @@
+# Dependency folders #
+node_modules/
+bower_components/
+
+# Compiled sources #
+build/
+dist/
+.sass_cache/
+
+# Archived stuff #
+*.rar
+*.zip
+*.tar
+
+# User generated #
+*.log
+.tmp
+.idea
+.vscode
+.DS_Store
+test
+tests

@@ -1,0 +1,40 @@
+/* _HEADER.SCSS
+ * --------------------------------------------------
+ *  Header styles should be declared here
+ * -------------------------------------------------- */
+
+header {
+    background-color: $main-color;
+    
+    h1 {
+        color: $white;
+    }
+
+    p {
+        color: $white;
+        margin-bottom: 10px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    i {
+        color: $secondary-color;
+        margin-left: 4px;
+    }
+
+    a {
+        @extend %link;
+    }
+
+    .clicks {
+        margin-top: 32px;
+        color: $white;
+        display: none;
+
+        &.is--active {
+            display: block;
+        }
+    }
+}

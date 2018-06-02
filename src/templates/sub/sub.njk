@@ -1,0 +1,11 @@
+{% extends "layouts/default.njk" %}
+{# don't set title on the index page (defaults to domain value in data.json) #}
+
+{# import macros #}
+{% import "macros/macro-section.njk" as s %}
+
+{% block header %}
+    {{ s.section("Gulp sub boilerplate", "Front-end boilerplate for a better and faster workflow", meta.url, "View on GitHub") }}
+{% endblock %}
+
+{% block footer %}{% endblock %}

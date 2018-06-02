@@ -1,0 +1,42 @@
+{
+  "name": "gulp-sass-nunjucks-boilerplate",
+  "version": "1.0.0",
+  "description": "Gulp setup for static websites using Nunjucks as templating engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp dev",
+    "deploy": "gulp"
+  },
+  "author": "Ziggy Verstrepen",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.5.1",
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^1.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-data": "^1.3.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-purgecss": "^1.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sequence": "^1.0.0",
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.5",
+    "jshint": "^2.9.5",
+    "lazypipe": "^1.0.1",
+    "main-bower-files": "^2.13.1",
+    "wiredep": "^4.0.0"
+  }
+}

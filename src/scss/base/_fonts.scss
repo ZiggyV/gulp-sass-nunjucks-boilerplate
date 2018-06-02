@@ -1,0 +1,49 @@
+/* _FONTS.SCSS
+ * --------------------------------------------------
+ *  Font declarations
+ *  Overpass Font is included by default
+ * -------------------------------------------------- */
+
+ @font-face {
+    font-family: 'Overpass-Regular';
+    src: url('../fonts/overpass-regular-webfont.eot');
+    src: url('../fonts/overpass-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/overpass-regular-webfont.woff2') format('woff2'),
+         url('../fonts/overpass-regular-webfont.woff') format('woff'),
+         url('../fonts/overpass-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass-Bold';
+    src: url('../fonts/overpass-bold-webfont.eot');
+    src: url('../fonts/overpass-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/overpass-bold-webfont.woff2') format('woff2'),
+         url('../fonts/overpass-bold-webfont.woff') format('woff'),
+         url('../fonts/overpass-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass-Light';
+    src: url('../fonts/overpass-light-webfont.eot');
+    src: url('../fonts/overpass-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/overpass-light-webfont.woff2') format('woff2'),
+         url('../fonts/overpass-light-webfont.woff') format('woff'),
+         url('../fonts/overpass-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass-Thin';
+    src: url('../fonts/overpass-extralight-webfont.eot');
+    src: url('../fonts/overpass-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/overpass-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/overpass-extralight-webfont.woff') format('woff'),
+         url('../fonts/overpass-extralight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

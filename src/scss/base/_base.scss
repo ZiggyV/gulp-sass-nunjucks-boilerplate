@@ -1,0 +1,263 @@
+/* _BASE.SCSS
+ * --------------------------------------------------
+ *  Base styles
+ * 
+ *  Default styles of the project, these will not
+ *  be changed or altered in most of the cases
+ * -------------------------------------------------- */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: $background-color;
+    font-family: $ovp-light;
+    color: $text-color;
+    @include fontsize(16px);
+
+    @include bp-medium {
+        @include fontsize(18px);
+    }
+}
+
+// remove all margins
+h1, h2, h3, h4, p {
+    margin: 0;
+    font-weight: normal;
+}
+
+// default font sizes (personal pref)
+h1 {
+    font-family: $ovp-regular;
+    @include fontsize(32px);
+
+    @include bp-medium {
+        @include fontsize(48px);
+    }
+    
+    &.big__heading {
+         font-family: $ovp-light;
+        @include fontsize(48px);
+
+        @include bp-medium {
+            @include fontsize(64px);
+        }
+    }
+}
+
+h2 {
+    font-family: $ovp-light;
+    @include fontsize(24px);
+
+    @include bp-medium {
+        @include fontsize(32px);
+    }
+}
+
+h3 {
+    font-family: $ovp-regular;
+    @include fontsize(21px);
+
+    @include bp-medium {
+        @include fontsize(24px);
+    }
+}
+
+h4 {
+    font-family: $ovp-bold;
+    @include fontsize(18px);  
+    
+    @include bp-medium {
+        @include fontsize(21px);
+    }  
+}
+
+p {
+    line-height: 1.5;
+}
+
+.small {
+    @include fontsize(14px);
+}
+
+.thin {
+    font-family: $ovp-thin;
+    color: $paragraph-color;
+}
+
+.bold {
+    font-family: $ovp-bold;
+}
+
+// 'normalize' some other elements (personal pref)
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+section, footer {
+    padding: 56px 0;
+    
+    @include bp-normal {
+        padding: 112px 0;
+    }
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    color: $text-color;
+    outline: 0;
+    border: 1px solid $border-color;    
+
+    @include bp-medium {
+        padding: 16px;
+    }
+}
+
+input[type="email"]:focus, 
+input[type="tel"]:focus,
+input[type="text"]:focus, 
+textarea {
+    color: $main-color;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+fieldset {
+    padding: 0;
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    color: $paragraph-color;    
+}
+
+::-moz-placeholder {
+    color: $paragraph-color;    
+}
+
+:-ms-input-placeholder {
+    color: $paragraph-color;    
+}
+
+:-moz-placeholder {
+    color: $paragraph-color;    
+}
+
+// wrapper and helper classes
+.wrapper {
+    padding: 0 24px;
+    max-width: 960px;
+    margin: 0 auto;
+
+    @include bp-medium {
+        padding: 0 48px
+    }
+}
+
+.wrapper--big {
+    @extend .wrapper;
+    max-width: 1400px;
+}
+
+.vh--center {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.vh--center-sm {
+    @extend .vh--center;
+
+    height: 60%;
+}
+
+.wrap {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.section--white {
+    background-color: $white;
+}
+
+.m--bottom {
+    margin-bottom: 24px;
+        
+    @include bp-medium {
+        margin-bottom: 32px;
+    }
+}
+
+.m--bottom-sm {
+    margin-bottom: 8px;
+        
+    @include bp-medium {
+        margin-bottom: 12px;
+    }
+}
+
+// clearfix: add 'cf' to container of floated elements
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+// selected text color and bg
+::-moz-selection {
+    color: $white;
+    background: $main-color;
+}
+
+::selection {
+    color: $white;
+    background: $main-color;
+}
+
+// this element is visible when visitor uses IE10 or below
+.browserupgrade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 9999;
+    background: $white;
+    padding: 16px;
+
+    @include bp-medium {
+        padding: 20px;
+    }
+    
+    a {
+        @extend %link;
+    }
+}

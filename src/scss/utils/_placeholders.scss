@@ -1,0 +1,14 @@
+/* _PLACEHOLDERS.SCSS
+ * --------------------------------------------------
+ *  SASS placeholders
+ * 
+ *  All placeholders should be declared here. Easily
+ *  extend styles between selectors 
+ * -------------------------------------------------- */
+
+// link placeholder 
+%link {
+    color: $secondary-color;
+    font-family: $ovp-light;
+    text-decoration: underline;
+}

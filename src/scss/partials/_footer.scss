@@ -1,0 +1,9 @@
+/* _FOOTER.SCSS
+ * --------------------------------------------------
+ *  Footer styles should be declared here
+ * -------------------------------------------------- */
+
+footer {
+    @extend .vh--center-sm;
+    @extend header;
+}

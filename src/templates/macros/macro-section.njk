@@ -1,0 +1,19 @@
+{% macro section(section='header', class='', h1, p, a, a_text, icon="clone") %}
+    <{{ section | safe}} class="vh--center {{ class }}">
+        <div class="wrapper wrap">
+            <h1 class="big__heading m--bottom">{{ h1 }}</h1>
+            <p>{{ p }}</p>
+            <p>
+                <a target="_blank" href="{{ a }}">{{ a_text }}
+                    {% if icon %}
+                        <i class="fas fa-clone fa-sm" title="Clone"></i>
+                    {% endif %}
+                </a>
+            </p>
+            
+            {% if not class %}
+                <p class="clicks">0 times clicked :)</p>
+            {% endif %}
+        </div>
+    </{{ section }}>
+{% endmacro %}
