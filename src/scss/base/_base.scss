@@ -220,6 +220,10 @@ fieldset {
     }
 }
 
+.pt--none {
+    padding-top: 0;
+}
+
 // clearfix: add 'cf' to container of floated elements
 .cf:before,
 .cf:after {

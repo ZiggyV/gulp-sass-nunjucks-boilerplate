@@ -1,0 +1,17 @@
+# rename this file to .htaccess (if you need it)
+# change R=302 to R=301 after testing
+
+RewriteEngine On
+
+# remove www from host
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1%{REQUEST_URI} [R=302,QSA,NC,L]
+
+# force HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=302,L]
+
+# remove .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [R=302,NC,L]

@@ -67,7 +67,7 @@ var config = {
     },
     html: {
         input: 'src/templates/**/*.{html,njk}',
-        pages: 'src/templates/*.{html,njk}',
+        pages: ['src/templates/*.{html,njk}', 'src/templates/sub/*.{html,njk}'],
         layouts: 'src/templates/layouts/*.{html,njk}',
         bower: 'src/templates/layouts',
         build: '.tmp/**/*.html',
@@ -107,6 +107,9 @@ gulp.task('serve', ['nunjucks', 'styles', 'scripts', 'images', 'fonts'], functio
             baseDir: [config.global.tmp],
             routes: {
                 '/bower_components': 'bower_components'
+            },
+            serveStaticOptions: {
+                extensions: ['html']
             }
         },
         notify: false,
@@ -127,7 +130,7 @@ gulp.task('serve', ['nunjucks', 'styles', 'scripts', 'images', 'fonts'], functio
  *  data from data.json on change
  * -------------------------------------------------- */
 gulp.task('nunjucks', function() {
-    return gulp.src(config.html.pages)
+    return gulp.src(config.html.pages, { base: 'src/templates' })
         .pipe(plumber())
         .pipe(data(function() {
             // return require(config.html.data)

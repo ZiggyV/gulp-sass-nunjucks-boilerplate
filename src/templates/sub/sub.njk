@@ -1,0 +1,26 @@
+{% extends "layouts/default.njk" %}
+
+{# set variables #}
+{% set title = 'Sub' %}
+{% set subName = 'sub' %} {# required if the file is in a subdirectory #}
+
+{# import macros #}
+{% import "macros/macro-section.njk" as s %}
+{% import "macros/macro-grid.njk" as grid %}
+
+{% block header %}
+    {{ s.section(class="vh--center-sm", "Subdirectory", "Change the html.pages value in the config object to add more subdirectories", "https://github.com/ZiggyV/gulp-sass-nunjucks-boilerplate/blob/master/gulpfile.js#L70", "Gulpfile.js") }}
+{% endblock %}
+
+{% block content %}
+    <section id="cards">
+        <div class="wrapper--big">
+            <h2 class="m--bottom">16:9</h2>
+            <div class="card__container">
+                {% for card in cards %}
+                    {{ grid.gridItem(card.title, card.image, card.alt, card.excerpt) }}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -14,16 +14,16 @@
     <!-- Color the status bar on mobile devices -->
     <meta name="theme-color" content="#FF6347">
     <title>{{ (title + " - " + meta.domain) if title else meta.domain }}</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- External CSS file(s) - automatically injected -->
-    <!-- build:css css/main.css -->
+    <!-- build:css /css/main.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css" />
     <!-- endbower -->
     
     <!-- Main CSS file -->
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="/css/main.css" />
     <!-- endbuild -->
 </head>
 <body>  
@@ -51,15 +51,15 @@
     {% endblock %} 
     
     <!-- External JS file(s) - automatically injected -->
-    <!-- build:js js/vendor.js -->
+    <!-- build:js /js/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- Main JS file -->
-    <!-- build:js js/main.js -->
-    <script src="js/main.js"></script>
+    <!-- build:js /js/main.js -->
+    <script src="/js/main.js"></script>
     <!-- endbuild -->
 </body>
 </html>

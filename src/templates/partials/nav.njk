@@ -4,7 +4,7 @@
             {# loop through navItems in data.json and apply active link #}
             {% for item in navItems %}
                 <li>
-                    <a class="{% if item.item == title|lower or (item.item == 'index' and not title) %}active{% endif %}" href="{{ item.item }}.html">{{ item.item_pretty }}</a>
+                    <a class="{% if item.item == title|lower or (item.item == '/' and not title) %}active{% endif %}" href="{% if subName and item.item == '/' %}..{% elif subName %}../{% endif %}{{ item.dir + item.item if item.dir else item.item }}">{{ item.item_pretty }}</a>
                 </li> 
             {% endfor %}
         </ul>
