@@ -21,7 +21,7 @@
     
     function handleBodyClick() {
         count+=1;
-        $clicks.addClass('is--active');
+        $clicks.addClass('is-active');
         $clicks.html('You clicked ' + count + ((count != 1) ? ' times':' time') + '!');
     }
 

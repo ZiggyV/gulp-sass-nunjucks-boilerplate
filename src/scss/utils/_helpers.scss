@@ -1,0 +1,49 @@
+/* _HELPERS.SCSS
+ * --------------------------------------------------
+ *  Helper/modifier classes
+ * 
+ *  Most of it follows BEM rules, keeps CSS DRY
+ * -------------------------------------------------- */
+
+.vh__center {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.vh__center--sm {
+    height: 60%;
+}
+
+.wrap {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.section-white {
+    background-color: $white;
+}
+
+.mb-sm {
+    margin-bottom: 8px;
+        
+    @include bp-medium {
+        margin-bottom: 12px;
+    }
+}
+.mb-md {
+    margin-bottom: 24px;
+        
+    @include bp-medium {
+        margin-bottom: 32px;
+    }
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+.bdr-btm {
+    border-bottom: 1px solid $border-color;
+}

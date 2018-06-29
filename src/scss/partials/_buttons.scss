@@ -4,9 +4,9 @@
  * -------------------------------------------------- */
 
 // default cta button
-.button {
+.btn {
     display: block;
-    padding: 15px 20px;
+    padding: 16px 20px;
     color: $white;
     text-align: center;
     background: $main-color;
@@ -16,8 +16,8 @@
     &:hover {
         background: darken($main-color, 5%);
     }
+}
 
-    &.button__small {
-        @include fontsize(14px);
-    }
+.btn--small {
+    @include fontsize(14px);
 }

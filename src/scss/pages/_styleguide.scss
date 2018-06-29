@@ -3,143 +3,110 @@
 *  Styles for the styleguide page
 * -------------------------------------------------- */
 
-#colors {
-    border-bottom: 1px solid $border-color;
+.color__item {
+    float: left;
+    width: 50%;
+    margin-bottom: 24px;
 
-    .color__item {
-        float: left;
-        width: 50%;
-        margin-bottom: 24px;
+    &:nth-child(9),
+    &:nth-child(10) {
+        margin-bottom: 0;
+    }
 
-        &:nth-child(9),
-        &:nth-child(10) {
+    @include bp-normal {
+        width: 19%;
+        margin-right: 1.25%;
+
+        &:nth-of-type(5n+5) {
+            margin-right: 0;
+        }
+
+        &:nth-child(1n+5) {
             margin-bottom: 0;
-        }
-
-        @include bp-normal {
-            width: 19%;
-            margin-right: 1.25%;
-
-            &:nth-of-type(5n+5) {
-                margin-right: 0;
-            }
-
-            &:nth-child(1n+5) {
-                margin-bottom: 0;
-            }
-        }
-
-        .color {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin: 0 auto;
-            
-            @include bp-medium {
-                width: 100px;
-                height: 100px;
-            }
-
-            &.color--main {
-                background: $main-color;
-            }
-            &.color--secondary {
-                background: $secondary-color;
-            }
-            &.color--tertiary {
-                background: $tertiary-color;
-            }
-            &.color--text {
-                background: $text-color;
-            }
-            &.color--paragraph {
-                background: $paragraph-color;
-            }
-            &.color--shadow {
-                background: $shadow-color;
-            }
-            &.color--border {
-                background: $border-color;
-            }
-            &.color--background {
-                background: $background-color;
-                border: 1px solid $border-color;
-            }
-            &.color--error {
-                background: $error-color;
-            }
-            &.color--success {
-                background: $success-color;
-            }
-        }
-        
-        .color__details {
-            text-align: center;
-            padding-top: 15px;
-
-            @include bp-medium {
-                padding-top: 20px;
-            }
-            
-            p {
-                &.small {
-                    color: $paragraph-color;                             
-                }
-            }
         }
     }
 }
 
-#images {
-    border-bottom: 1px solid $border-color;
+.color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    
+    @include bp-medium {
+        width: 100px;
+        height: 100px;
+    }
 }
 
-#typo {
-    .typo__container {
-        .typo__item {
-            border-bottom: 1px solid $border-color;
-            margin-bottom: 24px;
-            padding-bottom: 24px;
+.color--main { background: $main-color; }
+.color--secondary { background: $secondary-color; }
+.color--tertiary { background: $tertiary-color; }
+.color--text { background: $text-color; }
+.color--paragraph { background: $paragraph-color; }
+.color--shadow { background: $shadow-color; }
+.color--border { background: $border-color; }
+.color--background { background: $background-color; border: 1px solid $border-color; }
+.color--error { background: $error-color}
+.color--success { background: $success-color; }
 
-            @include bp-normal {
-                margin-bottom: 32px;
-                padding-bottom: 32px;
-            }
+.color__details {
+    text-align: center;
+    padding-top: 15px;
 
-            &:last-of-type {
-                border-bottom: none;
-                margin-bottom: 0;
-                padding-bottom: 0;
-            }
+    @include bp-medium {
+        padding-top: 20px;
+    }
+    
+    p {
+        &.small {
+            color: $paragraph-color;                             
         }
+    }
+}
 
-        .typo {                
-            @include bp-medium {
-                float: left;
-            }
+.typo__item {
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
 
-            &.typo__desc {
-                @include bp-medium {
-                    width: 25%;                    
-                }
+    @include bp-normal {
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+    }
 
-                .bold {
-                    margin-bottom: 16px;
-                }
+    &:last-of-type {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
 
-                .small {
-                    color: $paragraph-color;
-                }
-            }
+.typo {                
+    @include bp-medium {
+        float: left;
+    }
+}
 
-            &.typo__example {
-                margin-top: 16px;
+.typo__desc {
+    @include bp-medium {
+        width: 25%;                    
+    }
 
-                @include bp-medium {
-                    margin-top: 0;
-                    width: 75%;                    
-                }
-            }
-        }
+    .bold {
+        margin-bottom: 16px;
+    }
+
+    .small {
+        color: $paragraph-color;
+    }
+}
+
+.typo__example {
+    margin-top: 16px;
+
+    @include bp-medium {
+        margin-top: 0;
+        width: 75%;                    
     }
 }

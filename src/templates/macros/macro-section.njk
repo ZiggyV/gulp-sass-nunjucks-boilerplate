@@ -1,7 +1,7 @@
 {% macro section(section='header', class='', h1, p, a, a_text, icon="clone") %}
-    <{{ section | safe}} class="vh--center {{ class }}">
+    <{{ section | safe}} class="vh__center {{ class }}">
         <div class="wrapper wrap">
-            <h1 class="big__heading m--bottom">{{ h1 }}</h1>
+            <h1 class="big__heading mb-md">{{ h1 }}</h1>
             <p>{{ p }}</p>
             <p>
                 <a target="_blank" href="{{ a }}">{{ a_text }}

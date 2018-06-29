@@ -20,9 +20,9 @@
         </div>
     </section>
 
-    <section id="cards" class="pt--none">
-        <div class="wrapper--big">
-            <h2 class="m--bottom">16:9</h2>
+    <section id="cards" class="pt-0">
+        <div class="wrapper wrapper--big">
+            <h2 class="mb-md">16:9</h2>
             <div class="card__container">
                 {% for card in cards %}
                     {{ grid.gridItem(card.title, card.image, card.alt, card.excerpt) }}

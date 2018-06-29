@@ -7,15 +7,15 @@
 {% import "macros/macro-section.njk" as s %}
 
 {% block header %}
-    {{ s.section(class="vh--center-sm", "Style guidelines", "Basic style guidelines I use in most of my projects", "https://ziggyv.be", "By Ziggy V", icon="") }}
+    {{ s.section(class="vh__center--sm", "Style guidelines", "Basic style guidelines I use in most of my projects", "https://ziggyv.be", "By Ziggy V", icon="") }}
 {% endblock %}
 
 {% block content %}
     {# colors #}
-    <section id="colors">
+    <section id="colors" class="bdr-btm">
         <div class="wrapper">
             <p class="bold"><span>01</span> COLORS</p>
-            <p class="thin m--bottom">Primary and text colors</p>
+            <p class="thin mb-md">Primary and text colors</p>
 
             <div class="color__container cf">
                 {% for color in colors %}
@@ -32,13 +32,13 @@
     </section>
 
     {# images #}
-    <section id="images" class="section--white">
+    <section id="images" class="section-white bdr-btm">
         <div class="wrapper">
             <p class="bold"><span>02</span> IMAGES</p>
-            <p class="thin m--bottom">Responsive image grid</p>
+            <p class="thin mb-md">Responsive image grid</p>
         </div>
 
-        <div class="wrapper--big">
+        <div class="wrapper wrapper--big">
             <div class="grid">
                 {% for row in imageGrid | batch(3) %}    
                     <div class="grid__row cf">
@@ -57,7 +57,7 @@
     <section id="typo">
         <div class="wrapper">
             <p class="bold"><span>03</span> TYPOGRAPHY</p>
-            <p class="thin m--bottom">Heading and paragraph font styles</p>
+            <p class="thin mb-md">Heading and paragraph font styles</p>
 
             <div class="typo__container">
                 {% for typo in typography %}

@@ -26,143 +26,142 @@ form {
 
         text-align: center;
     }
-    .form__row {
-        @include bp-small {
-            float: left;
-            width: 70%;
-        }
+}
 
-        input {
-            border: 1px solid $shadow-color;
-            border-bottom: none;
-            background: $background-color;
-            transition: .2s $cubic;
-
-            &:focus {
-                border-color: $main-color;
-            }
-
-            @include bp-small {
-                border-right: none;
-                border-bottom: 1px solid $shadow-color;
-            }
-        }
+.form__row {
+    @include bp-small {
+        float: left;
+        width: 70%;
     }
 
-    .submit__row {
-        @include bp-small {
-            float: left;
-            width: 30%;
+    input {
+        border: 1px solid $shadow-color;
+        border-bottom: none;
+        background: $background-color;
+        transition: .2s $cubic;
+
+        &:focus {
+            border-color: $main-color;
         }
 
-        input {
-            background: $main-color;
-            color: $white;
-            border: 1px solid $main-color;
-            border-top: none;
-            transition: .2s $cubic;
-
-            &:hover {
-                border-color: lighten($main-color, 5%); 
-                background: lighten($main-color, 5%);
-            }
-
-            @include bp-small {
-                border-left: none;
-                border-top: 1px solid $main-color;
-            }
+        @include bp-small {
+            border-right: none;
+            border-bottom: 1px solid $shadow-color;
         }
     }
 }
 
-#cards {
-    .card__container {
-        margin-left: -16px;
-        margin-right: -16px;
+.submit__row {
+    @include bp-small {
+        float: left;
+        width: 30%;
+    }
 
-        @include bp-normal {
-            display: flex;
-            flex-wrap: wrap;
+    input {
+        background: $main-color;
+        color: $white;
+        border: 1px solid $main-color;
+        border-top: none;
+        transition: .2s $cubic;
+
+        &:hover {
+            border-color: lighten($main-color, 5%); 
+            background: lighten($main-color, 5%);
+        }
+
+        @include bp-small {
+            border-left: none;
+            border-top: 1px solid $main-color;
+        }
+    }
+}
+
+.card__container {
+    margin-left: -16px;
+    margin-right: -16px;
+
+    @include bp-normal {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.card__item {
+    width: 100%;
+    padding: 0 16px;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid $border-color;
+
+    &:last-of-type {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border: none;
+    }
+
+    @include bp-normal {
+        width: 50%;
+        padding-bottom: 0;
+        border: none;
+        margin-bottom: 64px;
+
+        &:nth-of-type(5) {
+            margin-bottom: 0;
         }
     }
 
-    .card__item {
-        width: 100%;
-        padding: 0 16px;
-        margin-bottom: 32px;
-        padding-bottom: 24px;
-        border-bottom: 1px solid $border-color;
-
-        &:last-of-type {
-            margin-bottom: 0;
-            padding-bottom: 0;
-            border: none;
-        }
-
-        @include bp-normal {
-            width: 50%;
-            padding-bottom: 0;
-            border: none;
-            margin-bottom: 64px;
-
-            &:nth-of-type(5) {
-                margin-bottom: 0;
+    &:hover {
+        .image {
+            img {
+                transform: scale(1.1);
             }
         }
 
-        &:hover {
-            .image {
-                img {
-                    transform: scale(1.1);
-                }
-            }
-
-            h3 {
-                color: $main-color;
-            }
+        h3 {
+            color: $main-color;
         }
+    }
+}
 
-        .card__image {
-            float: left;
-            width: calc(50% - 16px);
-            margin-right: 16px;
-            margin-bottom: 8px;       
-            
-            @include bp-normal {
-                width: 100%;        
-                margin-bottom: 32px; 
-                margin-right: 0;       
-            }
+.card__image {
+    float: left;
+    width: calc(50% - 16px);
+    margin-right: 16px;
+    margin-bottom: 8px;       
+    
+    @include bp-normal {
+        width: 100%;        
+        margin-bottom: 32px; 
+        margin-right: 0;       
+    }
+}
 
-            .image {
-                overflow: hidden;
-                padding-bottom: 56.25%;
-                position: relative;
+.image {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
 
-                img {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    left: 0;
-                    bottom: 0;
-                    height: 100%;
-                    transition: transform .3s $cubic;
-                }
-            }
-        }
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        transition: transform .3s $cubic;
+    }
+}
 
-        .card__content {            
-            a {
-                color: inherit;
-            }
+.card__content {            
+    a {
+        color: inherit;
+    }
 
-            h3 {
-                transition: .3s $cubic;
-            }
+    h3 {
+        transition: .3s $cubic;
+    }
 
-            p {
-                color: $paragraph-color;        
-            }
-        }
+    p {
+        color: $paragraph-color;        
     }
 }

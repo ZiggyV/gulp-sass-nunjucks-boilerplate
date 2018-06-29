@@ -166,7 +166,7 @@ fieldset {
     color: $paragraph-color;    
 }
 
-// wrapper and helper classes
+// wrapper
 .wrapper {
     padding: 0 24px;
     max-width: 960px;
@@ -178,50 +178,7 @@ fieldset {
 }
 
 .wrapper--big {
-    @extend .wrapper;
     max-width: 1400px;
-}
-
-.vh--center {
-    display: table;
-    width: 100%;
-    height: 100%;
-}
-
-.vh--center-sm {
-    @extend .vh--center;
-
-    height: 60%;
-}
-
-.wrap {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.section--white {
-    background-color: $white;
-}
-
-.m--bottom {
-    margin-bottom: 24px;
-        
-    @include bp-medium {
-        margin-bottom: 32px;
-    }
-}
-
-.m--bottom-sm {
-    margin-bottom: 8px;
-        
-    @include bp-medium {
-        margin-bottom: 12px;
-    }
-}
-
-.pt--none {
-    padding-top: 0;
 }
 
 // clearfix: add 'cf' to container of floated elements

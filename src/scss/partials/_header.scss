@@ -27,14 +27,14 @@ header {
     a {
         @extend %link;
     }
+}
 
-    .clicks {
-        margin-top: 32px;
-        color: $white;
-        display: none;
+.clicks {
+    margin-top: 32px;
+    color: $white;
+    display: none;
 
-        &.is--active {
-            display: block;
-        }
+    &.is-active {
+        display: block;
     }
 }
