@@ -1,0 +1,13 @@
+{% extends "layouts/default.njk" %}
+
+{# set variables #}
+{% set title = 'Test1' %}
+
+{# import macros #}
+{% import "macros/macro-section.njk" as s %}
+
+{% block header %}
+    {{ s.section("Filler 1", "Front-end boilerplate for a better and faster workflow", meta.url, "View on GitHub") }}
+{% endblock %}
+
+{% block footer %}{% endblock %}

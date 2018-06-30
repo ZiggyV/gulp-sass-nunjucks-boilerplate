@@ -16,13 +16,34 @@
         hello,
         smiley,
         $clicks,
-        $nav,
+        $nav__link,
+        nav,
+        $link__dropdown,
+        $nav__nested,
+        $nav__trigger,
         $body; // i use '$' before a variable when it's a selector
     
     function handleBodyClick() {
         count+=1;
         $clicks.addClass('is-active');
         $clicks.html('You clicked ' + count + ((count != 1) ? ' times':' time') + '!');
+
+        if ($nav__nested.hasClass('is-open')) {
+            $nav__nested.toggleClass('is-closed');
+            $nav__nested.toggleClass('is-open');
+        }
+    }
+
+    function expandNav(e) {
+        e.preventDefault();
+
+        $nav__nested.toggleClass('is-closed');
+        $nav__nested.toggleClass('is-open');
+    }
+
+    function expandMobileNav() {
+        nav.toggleClass('m-open');
+        nav.toggleClass('m-closed');
     }
 
     // prevent parent from being notified from event
@@ -33,7 +54,11 @@
     // event bindings
     function bindings() {
         console.log(hello + smiley);
-        $nav.on('click', stopProp);
+
+        $nav__link.on('click', stopProp);
+        $nav__trigger.on('click', stopProp);
+        $link__dropdown.on('click', expandNav);
+        $nav__trigger.on('click', expandMobileNav);
         $body.on('click', handleBodyClick);
     }
 
@@ -43,7 +68,11 @@
         smiley = ' :)';
         count = 0;
         $clicks = $('.clicks');
-        $nav = $('nav ul li a');
+        nav = $('nav');
+        $nav__link = $('.nav__link');
+        $link__dropdown = $('.link--dropdown');
+        $nav__nested = $('.nav__nested');
+        $nav__trigger = $('.nav__trigger');
         $body = $('body');
 
         // execute bindings 

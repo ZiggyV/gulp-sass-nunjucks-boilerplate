@@ -9,21 +9,43 @@
     "navItems": [
         {
             "item" : "/",
-            "item_pretty": "home"
+            "item_pretty": "Home"
         },
         {
             "item": "styleguide",
-            "item_pretty": "style guidelines"
+            "item_pretty": "Style guidelines"
         },
         {
-            "item": "test",
-            "item_pretty": "test page"
-        },
-        {
-            "item": "sub",
-            "dir": "sub/",
-            "item_pretty": "subdirectory"
-        }
+            "item": "pages",
+            "item_pretty": "Pages",
+            "pages" : [
+                {
+                    "item": "test",
+                    "item_pretty": "Test page",
+                    "item_text": "Card and form macro",
+                    "item_icon": "fa-question-circle"
+                },
+                {
+                    "item": "test1",
+                    "item_pretty": "Filler 1",
+                    "item_text": "Filler content",
+                    "item_icon": "fa-user-circle"
+                },
+                {
+                    "item": "test2",
+                    "item_pretty": "Filler 2",
+                    "item_text": "Filler content",
+                    "item_icon": "fa-stop-circle"
+                },
+                {
+                    "item": "sub",
+                    "dir": "sub/",
+                    "item_pretty": "Subdirectory",
+                    "item_text": "Subdirectory possible",
+                    "item_icon": "fa-plus-circle"
+                }
+            ]
+        }        
     ],
     "colors": [
         {

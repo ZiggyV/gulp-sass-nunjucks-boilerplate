@@ -1,11 +1,31 @@
-<nav>
+<nav class="m-closed">
     <div class="wrapper">
-        <ul class="cf">
+        <button class="nav__trigger">
+            <span></span>
+        </button>
+
+        <ul class="nav__main cf">
             {# loop through navItems in data.json and apply active link #}
             {% for item in navItems %}
-                <li>
-                    <a class="{% if item.item == title|lower or (item.item == '/' and not title) %}active{% endif %}" href="{% if subName and item.item == '/' %}..{% elif subName %}../{% endif %}{{ item.dir + item.item if item.dir else item.item }}">{{ item.item_pretty }}</a>
-                </li> 
+                <li class="nav__item">
+                    {% if item.item == 'pages' %}
+                        <a class="nav__link link--dropdown" href="#">{{ item.item_pretty }} <i class="fas fa-angle-down"></i></a>
+
+                        <ul class="nav__nested is-closed cf">
+                            {% for page in item.pages %}
+                                <li class="nav__item item--nested">
+                                    <a class="nav__link link--nested {% if page.item == title|lower %}nested--active{% endif %}" href="{% if subName %}../{% endif %}{{ page.dir + page.item if page.dir else page.item }}">
+                                        <i class="fas {{ page.item_icon }}"></i>
+                                        <span>{{ page.item_pretty }}</span>
+                                        <p class="small">{{ page.item_text }}</p>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <a class="nav__link {% if item.item == title|lower or (item.item == '/' and not title) %}link--active{% endif %}" href="{% if subName and item.item == '/' %}..{% elif subName %}../{% endif %}{{ item.dir + item.item if item.dir else item.item }}">{{ item.item_pretty }}</a>
+                    {% endif %}
+                </li>
             {% endfor %}
         </ul>
     </div>

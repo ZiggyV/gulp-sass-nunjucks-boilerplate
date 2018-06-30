@@ -158,6 +158,7 @@ scss/
 │   └── _nav.scss             # Navigation
 ├── utils/                   
 │   ├── _functions.scss       # Sass funtions
+│   ├── _helpers.scss         # Helper classes
 │   ├── _mixins.scss          # Sass mixins
 │   ├── _placeholders.scss    # Sass placeholders
 │   └── _variables.scss       # Sass variables

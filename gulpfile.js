@@ -232,7 +232,7 @@ gulp.task('build', ['nunjucks', 'styles', 'scripts'], function() {
 var optimizeCss = lazypipe()
     .pipe(purgecss, {
         content: [config.html.build],
-        whitelist: ['is-active']
+        whitelist: ['is-active', 'is-closed', 'is-open', 'link--dropdown', 'm-open', 'm-closed']
     })
     .pipe(mergequeries, {
         log: false
