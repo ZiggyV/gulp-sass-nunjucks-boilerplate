@@ -21,14 +21,14 @@ nav {
 }
 
 .m-closed {
+    pointer-events: none;
+    
     .nav__main {
         opacity: 0;
-        pointer-events: none;
         transform: translate3d(0, -48px, 0);
 
         @include bp-medium {
             opacity: 1;
-            pointer-events: auto;
             transform: translate3d(0, 0, 0);
         }
     }
@@ -54,6 +54,7 @@ nav {
         padding: 0;
         display: inline-block;
         text-align: left;
+        pointer-events: auto;
     }
 }
 
@@ -94,6 +95,7 @@ nav {
     white-space: nowrap;
     position: relative;
     z-index: 100;
+    pointer-events: auto;
 
     @include bp-medium {
         display: none;
