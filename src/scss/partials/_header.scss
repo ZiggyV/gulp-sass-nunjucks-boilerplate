@@ -13,24 +13,16 @@ header {
     p {
         color: $white;
         margin-bottom: 10px;
-
-        &:last-of-type {
-            margin-bottom: 0;
-        }
     }
 
     i {
         color: $secondary-color;
         margin-left: 4px;
     }
-
-    a {
-        @extend %link;
-    }
 }
 
 .clicks {
-    margin-top: 32px;
+    margin-bottom: 0;
     color: $white;
     display: none;
 

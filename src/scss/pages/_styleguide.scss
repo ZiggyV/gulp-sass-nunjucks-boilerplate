@@ -3,6 +3,13 @@
 *  Styles for the styleguide page
 * -------------------------------------------------- */
 
+// colors
+.colorNumber {
+    margin-right: 16px;
+    color: $paragraph-color;
+    font-family: $ovp-light;
+}
+
 .color__item {
     float: left;
     width: 50%;
@@ -52,11 +59,6 @@
 
 .color__details {
     text-align: center;
-    padding-top: 15px;
-
-    @include bp-medium {
-        padding-top: 20px;
-    }
     
     p {
         &.small {

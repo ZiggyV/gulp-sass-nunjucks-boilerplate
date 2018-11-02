@@ -3,16 +3,15 @@
         <div class="wrapper wrap">
             <h1 class="big__heading mb-md">{{ h1 }}</h1>
             <p>{{ p }}</p>
-            <p>
-                <a target="_blank" href="{{ a }}">{{ a_text }}
-                    {% if icon %}
-                        <i class="fas fa-clone fa-sm" title="Clone"></i>
-                    {% endif %}
-                </a>
-            </p>
+            
+            <a class="cta__link {{ 'stopProp' if not class }}" target="_blank" href="{{ a }}">{{ a_text }}
+                {% if icon %}
+                    <i class="fas fa-clone fa-sm" title="Clone"></i>
+                {% endif %}
+            </a>
             
             {% if not class %}
-                <p class="clicks">0 times clicked :)</p>
+                <p class="clicks mt-md">0 times clicked :)</p>
             {% endif %}
         </div>
     </{{ section }}>

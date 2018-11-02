@@ -5,6 +5,7 @@
  *  Most of it follows BEM rules, keeps CSS DRY
  * -------------------------------------------------- */
 
+// vertical centering content
 .vh__center {
     display: table;
     width: 100%;
@@ -21,10 +22,17 @@
     text-align: center;
 }
 
+// default cta
+.cta__link {
+    @extend %link;
+}
+
+// color changer
 .section-white {
     background-color: $white;
 }
 
+//margin/padding defaults
 .mb-sm {
     margin-bottom: 8px;
         
@@ -32,6 +40,7 @@
         margin-bottom: 12px;
     }
 }
+
 .mb-md {
     margin-bottom: 24px;
         
@@ -40,10 +49,27 @@
     }
 }
 
+.mt-md {
+    margin-top: 24px;
+        
+    @include bp-medium {
+        margin-top: 32px;
+    }
+}
+
+.pt-sm {
+    padding-top: 8px;
+
+    @include bp-medium {
+        padding-top: 12px;
+    }
+}
+
 .pt-0 {
     padding-top: 0;
 }
 
+// borders
 .bdr-btm {
     border-bottom: 1px solid $border-color;
 }

@@ -21,6 +21,7 @@
         $link__dropdown,
         $nav__nested,
         $nav__trigger,
+        $stopProp,
         $body; // i use '$' before a variable when it's a selector
     
     function handleBodyClick() {
@@ -57,6 +58,7 @@
 
         $nav__link.on('click', stopProp);
         $nav__trigger.on('click', stopProp);
+        $stopProp.on('click', stopProp);
         $link__dropdown.on('click', expandNav);
         $nav__trigger.on('click', expandMobileNav);
         $body.on('click', handleBodyClick);
@@ -73,6 +75,7 @@
         $link__dropdown = $('.link--dropdown');
         $nav__nested = $('.nav__nested');
         $nav__trigger = $('.nav__trigger');
+        $stopProp = $('.stopProp');
         $body = $('body');
 
         // execute bindings 
