@@ -12,6 +12,11 @@ RewriteCond %{HTTPS} !=on
 RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=302,L]
 
 # remove .html
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html [R=302,NC,L]
+RewriteRule ^(.*)$ $1.html [QSA,NC,L]
+
+# redirect domain.com/page.html to domain.com/page
+RewriteCond %{THE_REQUEST} \.html
+RewriteRule ^(.*)\.html$ /$1 [R=302,L]
