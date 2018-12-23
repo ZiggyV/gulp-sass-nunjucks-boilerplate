@@ -5,7 +5,55 @@
 {% import "macros/macro-section.njk" as s %}
 
 {% block header %}
-    {{ s.section("Gulp boilerplate", "Front-end boilerplate for a better and faster workflow", meta.url, "View on GitHub") }}
+    <header class="header__border"></header>
 {% endblock %}
 
-{% block footer %}{% endblock %}
+{% block nav %}{% endblock %}
+
+{% block content %}
+    <section id="features">
+        <div class="wrapper">
+            <h1 class="mb-md">Gulp-sass-nunjucks-boilerplate <span class="clicks clicks--index">You clicked 0 times! :)</span></h1>
+            <p class="mb-md">A front-end boilerplate using <a href="https://gulpjs.com" target="_blank">Gulp</a> as build tool and <a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a> as templating engine. Based on Yeoman's <a href="https://github.com/yeoman/generator-webapp" target="_blank">webapp generator</a>, various other blogs/tutorials and my own experience.</p>
+
+            <h4 class="mb-md">Features</h4>
+            <ul class="features__list">
+                <li class="mb-md">
+                    <p><span class="bold">Live reloading and synchronization</span> with <a href="https://www.browsersync.io/" target="_blank">BrowserSync</a>.</p>
+                </li>
+                <li class="mb-md">
+                    <p><span class="bold">Lints, uglifies and minifies</span> JavaScript</p>
+                </li>
+                <li class="mb-md">
+                    <p><span class="bold">Compiles Sass</span> with <a href="https://github.com/sass/libsass" target="_blank">libSass</a>. Writes <span class="bold">sourcemaps</span> in development.</p>
+                </li>
+                <li class="mb-md">
+                    <p><span class="bold">Autoprefixes, minifies</span> and <span class="bold">removes</span> unused CSS.</p>
+                </li>
+                <li class="mb-md">
+                    <p><span class="bold">Media query optimization</span>: merges matching media queries into one definition.</p>
+                </li>
+                <li class="mb-md">
+                    <p><span class="bold">Optimizes images</span> - PNG, JPG, GIF and SVG.</p>
+                </li>
+                <li class="mb-md">
+                    <p>Handles <span class="bold">file concatentation</span> with <a href="https://github.com/jonkemp/gulp-useref" target="_blank">gulp-useref</a>.</p>
+                </li>
+                <li class="mb-md">
+                    <p><span class="bold">Automatically injects assets</span> from bower_components to HTML/SCSS files.</p>
+                </li>
+                <li class="mb-md">
+                    <p>Render <span class="bold">Nunjucks templates</span> with <a href="https://github.com/carlosl/gulp-nunjucks-render" target="_blank">gulp-nunjucks-render</a>.</p>
+                </li>
+                <li class="mb-md">
+                    <p>Uses <a href="https://github.com/colynb/gulp-data" target="_blank">gulp-data</a> to <span class="bold">populate Nunjucks templates</span> with JSON data.</p>
+                </li>
+            </ul>
+            
+            <p class="mt-md mb-md">A few basic styles and mixins are included, as well as a JavaScript file with best practices based on <a href="https://www.youtube.com/watch?v=RMiTxHba5fo" target="_blank">a podcast from DevTips</a>. These are completely optional and can be removed or altered according to your liking.</p>
+            
+            <a href="styleguide" class="btn">basic style guidelines</a>
+            <a href="test" class="btn">test pages</a>
+        </div>
+    </section>
+{% endblock %}

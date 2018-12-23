@@ -1,6 +1,6 @@
 <!-- Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="{{ (title + " - " + meta.domain) if title else meta.domain }}">
+<meta property="og:title" content="{{ (title_pretty + " - " + meta.domain) if title_pretty else meta.domain }}">
 <meta property="og:site_name" content="{{ meta.domain_lower }}">
 <meta property="og:url" content="{{ meta.url }}{{ "/" + subName if subName }}{{ "/" + title|lower if title }}">
 <meta property="og:description" content="{{ meta.description }}">
@@ -11,7 +11,7 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ (title + " - " + meta.domain) if title else meta.domain }}">
+<meta name="twitter:title" content="{{ (title_pretty + " - " + meta.domain) if title_pretty else meta.domain }}">
 <meta name="twitter:domain" content="{{ meta.domain_lower }}">
 <meta name="twitter:url" content="{{ meta.url }}{{ "/" + subName if subName }}{{ "/" + title|lower if title }}">
 <meta name="twitter:description" content="{{ meta.description }}">

@@ -12,8 +12,8 @@
     {% endblock %} 
 
     <!-- Color the status bar on mobile devices -->
-    <meta name="theme-color" content="#FF6347">
-    <title>{{ (title + " - " + meta.domain) if title else meta.domain }}</title>
+    <meta name="theme-color" content="#181818">
+    <title>{{ (title_pretty + " - " + meta.domain) if title_pretty else meta.domain }}</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- External CSS file(s) - automatically injected -->
@@ -41,7 +41,7 @@
 
     {# header block #}
     {% block header %}
-        {{ s.section(class="vh__center--sm", "Default content", "Can be replaced by using template inheritance", meta.url, "View on GitHub") }}
+        {{ s.section(class="vh__center--sm", "Default content", "Can be replaced by using template inheritance", meta.github, "View on GitHub") }}
     {% endblock %} 
 
     {# main content block #}    
@@ -51,7 +51,7 @@
 
     {# footer block #}
     {% block footer %}
-        {{ s.section(section="footer", class="vh__center--sm", "Gulp boilerplate", "Front-end boilerplate for a better and faster workflow", meta.url, "View on github") }}
+        {{ s.section(section="footer", class="vh__center--sm", "Gulp boilerplate", "Front-end boilerplate for a better and faster workflow", meta.github, "View on GitHub") }}
     {% endblock %} 
     
     <!-- External JS file(s) - automatically injected -->

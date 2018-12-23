@@ -3,13 +3,19 @@
 *  Styles for the styleguide page
 * -------------------------------------------------- */
 
-// colors
-.colorNumber {
+// title
+.titleNumber  {
     margin-right: 16px;
     color: $paragraph-color;
     font-family: $ovp-light;
 }
 
+.titleText {
+    color: $text-color;
+    letter-spacing: 2px;
+}
+
+// colors
 .color__item {
     float: left;
     width: 50%;
@@ -62,7 +68,7 @@
     
     p {
         &.small {
-            color: $paragraph-color;                             
+            color: $text-color;                             
         }
     }
 }
@@ -97,10 +103,6 @@
 
     .bold {
         margin-bottom: 16px;
-    }
-
-    .small {
-        color: $paragraph-color;
     }
 }
 

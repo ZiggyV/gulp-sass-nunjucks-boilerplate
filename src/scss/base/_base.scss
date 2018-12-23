@@ -82,6 +82,7 @@ h4 {
 }
 
 p {
+    color: $paragraph-color;
     line-height: 1.5;
 }
 
@@ -91,11 +92,10 @@ p {
 
 .thin {
     font-family: $ovp-thin;
-    color: $paragraph-color;
 }
 
 .bold {
-    font-family: $ovp-bold;
+    font-weight: bold;
 }
 
 // 'normalize' some other elements (personal pref)

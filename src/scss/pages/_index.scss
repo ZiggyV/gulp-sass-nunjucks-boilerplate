@@ -2,3 +2,30 @@
  * --------------------------------------------------
  *  Styles for the index page
  * -------------------------------------------------- */
+
+#features p a {
+    @extend %link-main;
+}
+
+.features__list {
+    li {
+        position: relative;
+        display: block;
+
+        @extend %fa-icon !optional;
+        @extend .fas;
+
+        &:before {
+            content: fa-content($fa-var-check-circle);
+            color: $main-color;
+            position: absolute;
+            top: 3px;
+            left: 0;
+        }
+
+        p {
+            margin-left: 32px;
+            font-family: $ovp-light;
+        }
+    }
+}

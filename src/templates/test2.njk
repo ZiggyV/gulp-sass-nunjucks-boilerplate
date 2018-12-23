@@ -2,12 +2,13 @@
 
 {# set variables #}
 {% set title = 'Test2' %}
+{% set title_pretty = 'Filler 2' %}
 
 {# import macros #}
 {% import "macros/macro-section.njk" as s %}
 
 {% block header %}
-    {{ s.section("Filler 2", "Front-end boilerplate for a better and faster workflow", meta.url, "View on GitHub") }}
+    {{ s.section("Filler 2", "Front-end boilerplate for a better and faster workflow", meta.github, "View on GitHub") }}
 {% endblock %}
 
 {% block footer %}{% endblock %}

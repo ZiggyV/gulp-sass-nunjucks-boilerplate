@@ -25,6 +25,7 @@ nav {
     
     .nav__main {
         opacity: 0;
+        transition: none;
         transform: translate3d(0, -48px, 0);
 
         @include bp-medium {
@@ -42,6 +43,7 @@ nav {
 
     @include bp-medium {
         background: transparent;
+        transition: none;
     }
 }
 
@@ -55,6 +57,7 @@ nav {
         display: inline-block;
         text-align: left;
         pointer-events: auto;
+        transition: none;
     }
 }
 
@@ -136,8 +139,8 @@ nav {
 
 // nested nav
 .nav__nested {
-    transition: .2s $cubic;
-
+    transition: none;
+    
     @include bp-medium {
         position: absolute;
         left: -350px;
@@ -147,6 +150,7 @@ nav {
         margin-top: 24px;
         border-radius: 4px;
         box-shadow: 0 8px 24px rgba(darken($main-color, 15%), .4);
+        transition: .2s $cubic;
 
         &:before {
             width: 0; 

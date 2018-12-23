@@ -1,30 +1,26 @@
 {
     "meta": {
-        "domain": "Gulp boilerplate",
-        "domain_lower": "gulpboilerplate",
+        "domain": "Gulp Sass Nunjucks Boilerplate",
+        "domain_lower": "ziggyv",
         "description" : "A front-end boilerplate using Gulp as build tool and Nunjucks as templating engine.",
-        "image": "img-1.jpg",
-        "url": "https://github.com/ZiggyV/gulp-sass-nunjucks-boilerplate"
+        "image": "seo.png",
+        "url": "https://ziggyv.be/gulp-sass-nunjucks-boilerplate",
+        "github": "https://github.com/ZiggyV/gulp-sass-nunjucks-boilerplate"
     },
     "navItems": [
         {
-            "item" : "/",
+            "item": "/",
             "item_pretty": "Home"
         },
         {
-            "item": "styleguide",
-            "item_pretty": "Style guidelines"
+            "item": "test",
+            "item_pretty": "Test page"
         },
         {
             "item": "pages",
             "item_pretty": "Pages",
             "pages" : [
-                {
-                    "item": "test",
-                    "item_pretty": "Test page",
-                    "item_text": "Card and form macro",
-                    "item_icon": "fa-question-circle"
-                },
+                
                 {
                     "item": "test1",
                     "item_pretty": "Filler 1",
@@ -36,6 +32,12 @@
                     "item_pretty": "Filler 2",
                     "item_text": "Filler content",
                     "item_icon": "fa-stop-circle"
+                },
+                {
+                    "item": "test3",
+                    "item_pretty": "Filler 3",
+                    "item_text": "Filler content",
+                    "item_icon": "fa-question-circle"
                 },
                 {
                     "item": "sub",

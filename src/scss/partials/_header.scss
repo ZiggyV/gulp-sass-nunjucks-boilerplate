@@ -5,6 +5,8 @@
 
 header {
     background-color: $main-color;
+    background: url('../images/bg.jpg') no-repeat center center;
+    background-size: cover;
     
     h1 {
         color: $white;
@@ -21,6 +23,14 @@ header {
     }
 }
 
+.header__border {
+    height: 16px;
+
+     @include bp-normal {
+        height: 24px;
+    }
+}
+
 .clicks {
     margin-bottom: 0;
     color: $white;
@@ -28,5 +38,23 @@ header {
 
     &.is-active {
         display: block;
+    }
+}
+
+.clicks--index {
+    @extend .clicks;
+    
+    @include fontsize(16px);
+    color: darken($secondary-color, 32%);
+    background-color: lighten($secondary-color, 24%); 
+    padding: 8px 12px;
+    border-radius: 16px;
+
+    &.is-active {
+        display: inline-block;
+    }
+
+    @include bp-large {
+        transform: translateY(-8px);
     }
 }

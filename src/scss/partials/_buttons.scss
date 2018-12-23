@@ -11,13 +11,27 @@
     text-align: center;
     background: $main-color;
     border-radius: 3px;
-    transition: .2s $cubic;
+    transition: background .2s $cubic, transform .2s $cubic;
     
     &:hover {
-        background: darken($main-color, 5%);
+        background: lighten($main-color, 5%);
+        transform: translateY(-1px);
+    }
+
+    &:nth-of-type(2) {
+        margin-top: 8px;
+    }
+
+    @include bp-small {
+        display: inline-block;
+        margin-right: 16px;
+
+        &:nth-of-type(2) {
+            margin-top: 0;
+        }
     }
 }
 
-.btn--small {
+.btn__small {
     @include fontsize(14px);
 }
