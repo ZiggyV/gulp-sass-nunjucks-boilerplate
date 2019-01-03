@@ -17,8 +17,10 @@
 
 // import assets from bower_components - automatically injected 
 // bower:scss
-@import "bower_components/font-awesome/web-fonts-with-css/scss/fontawesome.scss";
-@import "bower_components/font-awesome/web-fonts-with-css/scss/fa-solid.scss";
+@import "bower_components/font-awesome/scss/fontawesome.scss";
+@import "bower_components/font-awesome/scss/regular.scss";
+@import "bower_components/font-awesome/scss/solid.scss";
+@import "bower_components/font-awesome/scss/brands.scss";
 // endbower
 
 // import base
