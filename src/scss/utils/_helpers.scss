@@ -33,6 +33,14 @@
 }
 
 //margin/padding defaults
+.mb-xs {
+    margin-bottom: 4px;
+        
+    @include bp-medium {
+        margin-bottom: 8px;
+    }
+}
+
 .mb-sm {
     margin-bottom: 8px;
         
